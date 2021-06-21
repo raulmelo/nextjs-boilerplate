@@ -1,0 +1,11 @@
+{{#if hasCss }}
+import './{{pascalCase name}}page.scss'
+{{/if}}
+
+export default function {{pascalCase name}}Page() {
+  return (
+    <div className="{{pascalCase name}}{{#if page }}Page{{/if}}">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id praesentium magnam quod, corporis voluptas? Sit rerum quos et. Aperiam consectetur quo dolore maiores sunt ad quas culpa repellendus sint!
+    </div>
+  )
+}
