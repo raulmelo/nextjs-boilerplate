@@ -33,7 +33,7 @@ module.exports = function (plop) {
       if (data.hasCss) {
         actions.push({
           type: 'add',
-          path: '../src/pages/{{dashCase folder}}/{{camelCase name}}/{{pascalCase name}}page.scss',
+          path: '../src/pages/{{dashCase folder}}/{{camelCase name}}/{{pascalCase name}}page.module.scss',
           templateFile: 'templates/styles.hbs'
         })
       }
@@ -74,7 +74,7 @@ module.exports = function (plop) {
         if (data.hasCss) {
           actions.push({
             type: 'add',
-            path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.scss',
+            path: '../src/components/{{pascalCase name}}/{{pascalCase name}}.module.scss',
             templateFile: 'templates/styles.hbs'
           })
         }
