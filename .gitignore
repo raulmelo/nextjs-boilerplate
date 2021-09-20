@@ -17,6 +17,8 @@ yarn.lock
 # production
 /build
 
+.vscode
+
 # misc
 .DS_Store
 
@@ -37,3 +39,6 @@ public/workbox-*.js
 
 # storybook
 storybook-static
+
+# Tailwind
+public/css/tailwind.css

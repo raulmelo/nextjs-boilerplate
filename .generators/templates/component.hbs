@@ -1,5 +1,5 @@
 {{#if hasCss }}
-  import './{{pascalCase name}}.scss'
+  import Style from './{{pascalCase name}}.module.scss'
 {{/if}}
 
 export interface propsModel {
@@ -8,7 +8,7 @@ export interface propsModel {
 
 const {{pascalCase name}} = (props: propsModel) => {
 return (
-  <div className="{{pascalCase name}}">
+  <div className={ Style.{{pascalCase name}} } >
     <h2>{props.title}</h2>
   </div>
 )

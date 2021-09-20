@@ -1,12 +1,16 @@
+import Head from 'next/head'
 {{#if hasCss }}
-import styles from './{{pascalCase name}}page.scss'
+  import styles from './{{pascalCase name}}page.module.scss'
 {{/if}}
 
 export default function {{pascalCase name}}Page() {
-  return (
-    <div className={styles.{{pascalCase name}}{{#if page }}Page{{/if}} }>
+  return <>
+    <Head>
+      <title>Generator Design system Tailwind</title>
+    </Head>
+    <main className={styles.{{pascalCase name}}{{#if page }}Page{{/if}} }>
       <h2>{{name}}</h2>
       Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente id praesentium magnam quod, corporis voluptas? Sit rerum quos et. Aperiam consectetur quo dolore maiores sunt ad quas culpa repellendus sint!
-    </div>
-  )
+    </main>
+  </>
 }

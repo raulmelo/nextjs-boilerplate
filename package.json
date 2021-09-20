@@ -13,7 +13,7 @@
     "start": " yarn tailwind && next start",
     "generator": "yarn plop --plopfile ./.generators/propfile.js",
     "tailwind": "npx tailwindcss -c tailwind.config.js -o public/css/tailwind.css --jit --purge='./src/**/*.tsx,./src/**/*.html' --minify",
-    "tailwind-start": "npx tailwindcss -c tailwind.config.js -o public/css/tailwind.css --jit --purge='./src/**/*.tsx,./src/**/*.html' --watch"
+    "tailwind-start": "npx tailwindcss -c tailwind.config.js -o public/css/tailwind.css  --watch"
   },
   "dependencies": {
     "next": "10.1.3",
